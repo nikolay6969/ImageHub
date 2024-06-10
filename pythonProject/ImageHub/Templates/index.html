@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <title>ImageHUB</title>
+</head>
+<body>
+<h1>ImageHub</h1>
+<div class="items">
+{% for image in images %}
+
+    <div class="item">
+        <div class="image-box"><img class="image" src="{{image.image}}"></div>
+        <div class="like">{{image.like}}</div>
+        <div class="title"><h2>{{image.title}}</h2></div>
+        <div class="descriptions">{{image.description}}</div>
+        <div class="like-count">{{image.counLike}}</div>
+
+    </div>
+
+{% endfor %}
+    </div>
+</body>
+</html>

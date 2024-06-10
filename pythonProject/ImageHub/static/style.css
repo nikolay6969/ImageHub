@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    border: 2px solid #6a00ff;
+    padding: 10px;
+    margin: 10px;
+    width: 320px;
+    height: 400px;
+    transition: 0.5s;
+}
+
+.image-box img {
+    min-width: 100%;
+    min-height: 100%;
+    flex-shrink: 0;
+}
+
+.like-count {
+    background-image: url('https://pngimg.com/d/like_PNG44.png');
+    padding-left: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+.image-box img:hover {
+    min-width: auto;
+    min-height: auto;
+    flex-shrink: 0;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.image-box {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+
